@@ -1,0 +1,362 @@
+/* =========================
+   BODY & TIPOGRAFÍA
+========================= */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f090c5;
+    background-image: url('imagen2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+/* =========================
+   CABECERA
+========================= */
+header {
+    background-color: #e33796;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.Titulo {
+    font-family: "Times New Roman", serif;
+    font-size: 80px;
+    color: white;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    float: left;
+    border-radius: 50%;
+}
+
+/* =========================
+   NAVEGACIÓN
+========================= */
+nav {
+    background-color: #eeebab;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #d63384;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: #d63384;
+}
+
+/* =========================
+   MAIN & LAYOUT
+========================= */
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* =========================
+   SECCIÓN DE TARJETAS
+========================= */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: #fff0f5;
+    width: 30%;
+    min-width: 280px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* =========================
+   ASIDE (BARRA LATERAL)
+========================= */
+aside {
+    width: 300px;
+    background-color: white;
+    border-left: 6px solid #ffd700;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+    flex-shrink: 0;
+}
+
+aside section {
+    margin-bottom: 1.5rem;
+}
+
+aside h2 {
+    color: #d63384;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+aside ul {
+    padding-left: 1.2rem;
+    list-style-type: circle;
+}
+
+aside ul li {
+    margin-bottom: 0.5rem;
+}
+
+aside a {
+    color: #ff69b4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   CARRUSEL
+========================= */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.carousel button.prev {
+  left: 10px;
+}
+
+.carousel button.next {
+  right: 10px;
+}
+
+.carousel button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* =========================
+   CONTENIDO CENTRADO
+========================= */
+.contenido-centro-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.contenido-centro {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px;
+}
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info, .social-media {
+    margin-bottom: 20px;
+}
+
+.contact-info p, .social-media a {
+    margin: 5px;
+}
+
+.contact-info a, .social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-media a:hover {
+    color: #ddd;
+}
+
+/* =========================
+   MEDIA QUERIES
+========================= */
+@media (max-width: 768px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+    
+    main {
+        flex-direction: column;
+    }
+    
+    aside {
+        width: 100%;
+        border-left: none;
+        margin-top: 20px;
+    }
+}
+
+/* ----------------------- */
+/* MEDIA QUERIES           */
+/* ----------------------- */
+
+/* Tablets (pantallas hasta 900px) */
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header .Titulo {
+    margin: 10px 0;
+    font-size: 22px;
+  }
+
+  nav.navegador {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .container, .testimonios-container {
+    padding: 15px;
+  }
+
+  #testimonios .testimonio {
+    padding: 12px 15px;
+  }
+
+  form#formTestimonio {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  form#formTestimonio .form-titulo {
+    font-size: 22px;
+  }
+}
+
+/* Celulares (pantallas hasta 600px) */
+@media (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+
+  header .Titulo {
+    font-size: 20px;
+  }
+
+  nav.navegador {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .container, .testimonios-container {
+    padding: 10px;
+  }
+
+  #testimonios .testimonio {
+    padding: 10px 12px;
+  }
+
+  form#formTestimonio {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  form#formTestimonio .form-titulo {
+    font-size: 20px;
+  }
+
+  form#formTestimonio input,
+  form#formTestimonio textarea,
+  form#formTestimonio select,
+  form#formTestimonio button {
+    font-size: 15px;
+    padding: 8px;
+  }
+}

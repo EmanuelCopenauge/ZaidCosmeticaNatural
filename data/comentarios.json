@@ -1,0 +1,14 @@
+[
+  {
+    "nombre": "Vanina",
+    "fecha": "13/9/2025",
+    "comentario": "Hola, esto funciona",
+    "calificacion": 5
+  },
+  {
+    "nombre": "Emanuel",
+    "fecha": "13/9/2025",
+    "comentario": "Probando mensaje número 3",
+    "calificacion": 4
+  }
+]

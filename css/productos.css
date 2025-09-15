@@ -1,0 +1,127 @@
+/* ================================
+   Estilos para Productos
+   ================================ */
+
+/* Contenedor general de la grilla de productos */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+/* Tarjeta de cada producto */
+.producto {
+  background-color: #fff0f5;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.producto h3 {
+  margin: 10px 0;
+  color: #d63384;
+  font-size: 1.2rem;
+}
+
+.producto p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Botón "Agregar al carrito" */
+.agregar-carrito {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.agregar-carrito:hover {
+  background-color: #45a049;
+}
+
+/* ================================
+   Carrito de compras
+   ================================ */
+#carrito {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #ffd700;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#carrito h2 {
+  margin-bottom: 15px;
+  color: #d63384;
+  text-align: center;
+}
+
+#carrito ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#carrito ul li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+#carrito button {
+  background-color: #d63384;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+#carrito button:hover {
+  background-color: #b82d73;
+}
+
+/* Total del carrito */
+#total {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  color: #4CAF50;
+}
+
+/*titulo de productos*/
+.productos-title {
+  text-align: center;
+  margin: 20px 0;
+  color: #d63384;
+}
+
+/*contenedor para centrar el main*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+

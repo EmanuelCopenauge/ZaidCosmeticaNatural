@@ -1,0 +1,54 @@
+/* ===============================
+   Sobrenosotros.css - Página específica
+   =============================== */
+
+/* Contenedor principal */
+.contenedor-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 40px;
+    flex-wrap: wrap; /* Solo para mantener flexibilidad básica */
+}
+
+/* Sección Nosotros */
+.nosotros {
+    flex: 2;
+    min-width: 300px;
+    max-width: 700px;
+}
+
+/* Imagen de la fundadora */
+.foto-vanina {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+/* Títulos principales dentro de Nosotros */
+.nosotros h3 {
+    font-size: 3rem;
+    color: #000;
+    font-weight: bold;
+    margin: 20px 0;
+    font-family: 'Times', serif;
+}
+
+/* Párrafos del contenido */
+.nosotros .p1 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-family: 'Times', sans-serif;
+    color: #333;
+}
+
+
+/* Redes sociales */
+.redes-sociales li {
+    margin-bottom: 8px;
+}

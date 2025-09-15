@@ -1,0 +1,137 @@
+/.testimonios-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column; /* todo en vertical */
+  gap: 40px;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Formulario de testimonios */
+form#formTestimonio {
+  background: #FDF8F2; /* color suave */
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin: 0 auto 40px auto; /* centrado */
+  font-family: 'Arial', sans-serif;
+}
+
+form#formTestimonio h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4B5320;
+}
+
+form#formTestimonio label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+form#formTestimonio input,
+form#formTestimonio textarea,
+form#formTestimonio select {
+  width: 100%;
+  padding: 40px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form#formTestimonio textarea {
+  resize: vertical; /* permitir ajustar altura */
+}
+
+form#formTestimonio button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #8FBC8F;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form#formTestimonio button:hover {
+  background-color: #6B8E23;
+}
+
+/* Lista de testimonios */
+.lista-testimonios {
+  display: flex;
+  flex-direction: column; /* vertical */
+  gap: 25px;
+}
+
+.testimonio {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  border-left: 6px solid #d63384;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.testimonio p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.testimonio span {
+  display: block;
+  font-weight: bold;
+  text-align: right;
+  color: #555;
+}
+
+/* Mensaje de confirmación */
+#mensaje-confirmacion {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+  .testimonios-container {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .form-testimonio {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .form-testimonio button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .testimonio {
+    padding: 20px;
+  }
+}
+
