@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito - ZAID Cosmética Natural</title>
+  <link rel="stylesheet" href="css/carrito.css">
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <a href="index.html">
+      <img src="imagenes/logo.JPEG" alt="Logo Zaid Cosmética Natural" class="logo">
+    </a>
+    <h2 class="Titulo">ZAID COSMETICA NATURAL</h2>
+    <nav class="navegador">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="sobrenosotros.html">Sobre Nosotros</a>
+      <a href="carrito.html">Carrito de Compras</a>
+      <a href="contacto.html">Contacto y Redes Sociales</a>
+      <a href="testimonios.html">Testimonio de nuestros Clientes</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section id="carrito-container">
+      <h3 class="titu">🛒 Tu Carrito de Compras</h3>
+
+      <!-- Total del carrito -->
+      <p class="carrito-total"><strong>Total: $<span id="carrito-total">0</span></strong></p>
+
+      <!-- Botón vaciar carrito -->
+      <button id="vaciar-carrito-btn" onclick="vaciarCarrito()">Vaciar carrito</button>
+
+      <!-- Lista de productos -->
+      <div id="carrito-lista"></div>
+
+      <!-- Formulario de datos del cliente -->
+      <form id="formCompra">
+        <h3>Datos del comprador</h3>
+
+        <input type="text" id="nombreCliente" name="nombreCliente" placeholder="Tu nombre" required>
+        <input type="email" id="emailCliente" name="emailCliente" placeholder="Tu email" required>
+        <input type="tel" id="telefonoCliente" name="telefonoCliente" placeholder="Tu teléfono (opcional)">
+
+        <button type="submit" id="finalizar-compra-btn">Finalizar compra</button>
+      </form>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <div class="contact-info">
+      <p>Contacto:</p>
+      <p><a href="mailto:zaidcosmeticanatural@gmail.com">zaidcosmeticanatural@gmail.com</a></p>
+      <p>Teléfono: 1130712583</p>
+    </div>
+
+    <div class="social-media">
+      <a href="https://www.instagram.com/zaidcosmeticanatural/" target="_blank">Instagram @ZAID COSMETICA NATURAL</a>
+    </div>
+
+    <p>&copy; 2025 ZAID Cosmética Natural. Todos los derechos reservados.</p>
+  </footer>
+  <!-- JS del carrito -->
+  <script src="JS/carrito.js"></script>
+</body>
+</html>

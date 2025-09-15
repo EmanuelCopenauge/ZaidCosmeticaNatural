@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonios - ZAID Cosmética Natural</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/testimonios.css">
+</head>
+<body>
+
+  <!-- CABECERA -->
+  <header>
+    <a href="index.html">
+      <img src="imagenes/logo.JPEG" alt="Mi Empresa" class="logo">
+    </a>
+    <h2 class="Titulo">ZAID COSMETICA NATURAL</h2>
+
+    <!-- Barra de Navegación -->
+    <nav class="navegador">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="sobrenosotros.html">Sobre Nosotros</a>
+      <a href="carrito.html">Carrito de Compras</a>
+      <a href="contacto.html">Contacto y Redes Sociales</a>
+      <a href="testimonios.html">Testimonio de nuestros Clientes</a>
+    </nav>
+  </header>
+  <h2 class="subtitulo">Tu Opinion es importante para nosotors</h2>
+  <main class="testimonios-container">
+    <!-- FORMULARIO -->
+    <form id="formTestimonio">
+  <h3>Dejanos tu opinión</h3>
+
+  <label for="nombre">Tu nombre:</label>
+  <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre..." required>
+
+  <label for="comentario">Tu testimonio:</label>
+  <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe tu opinión aquí..." required></textarea>
+
+  <label for="calificacion">Calificación:</label>
+  <select id="calificacion" required>
+    <option value="">Selecciona</option>
+    <option value="1">★</option>
+    <option value="2">★★</option>
+    <option value="3">★★★</option>
+    <option value="4">★★★★</option>
+    <option value="5">★★★★★</option>
+  </select>
+
+  <button type="submit">Enviar Testimonio</button>
+</form>
+
+    <!-- LISTA DE TESTIMONIOS -->
+    <h2>Reseñas de Clientes 🌿</h2>
+    <div id="testimonios"></div>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <div class="contact-info">
+      <p>Contacto:</p>
+      <p><a href="mailto:zaidcosmeticanatural@gmail.com">zaidcosmeticanatural@gmail.com</a></p>
+      <p>Teléfono: 1130712583</p>
+    </div>
+
+    <div class="social-media">
+      <a href="https://www.instagram.com/zaidcosmeticanatural/" target="_blank" title="Instagram">@ZAID COSMETICA NATURAL</a>
+    </div>
+
+    <p>&copy; 2025 Mi Empresa. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="JS/testimonios.js"></script>
+</body>
+</html>

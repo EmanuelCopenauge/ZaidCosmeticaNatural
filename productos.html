@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - ZAID Cosmética Natural</title>
+  <!-- Estilos globales -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Estilos específicos de productos -->
+  <link rel="stylesheet" href="css/productos.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+            <a href="index.html">
+                <img src="imagenes/logo.JPEG" alt="Mi Empresa" class="logo">
+            </a>
+            <h2 class="Titulo">ZAID COSMETICA NATURAL</h2>
+
+            <!-- Barra de Navegación -->
+            <nav class="navegador">
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="sobrenosotros.html">Sobre Nosotros</a>
+                <a href="carrito.html">Carrito de Compras</a>
+                <a href="contacto.html">Contacto y Redes Sociales</a>
+                <a href="testimonios.php">Testimonio de nuestros Clientes</a>
+            </nav>
+        </header>
+  <!-- Sección de productos -->
+  <h2 class="productos-title">Nuestra Galeria de Productos</h2>
+  <main class="container">
+    <section class="productos">
+
+      <div class="producto">
+        <img src="imagencarrito/mantecacorporal.JPEG" alt="Manteca corporal">
+        <div class="product-name">Manteca corporal</div>
+        <div class="price">$15000</div>
+        <button onclick="agregarAlCarrito('Manteca corporal', 15000, 'imagencarrito/mantecacorporal.JPEG')">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="imagencarrito/brillolabial.JPEG" alt="Brillo Labial">
+        <div class="product-name">Brillo Labial</div>
+        <div class="price">$3000</div>
+        <button onclick="agregarAlCarrito('Brillo Labial', 3000, 'imagencarrito/brillolabial.JPEG')">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="imagencarrito/pastadental.JPEG" alt="Pasta dental en polvo">
+        <div class="product-name">Pasta dental en polvo</div>
+        <div class="price">$6000</div>
+        <button onclick="agregarAlCarrito('Pasta dental en polvo', 6000, 'imagencarrito/pastadental.JPEG')">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="imagencarrito/aguamicelar.JPEG" alt="Limpieza Facial con Agua Micelar de Rosa">
+        <div class="product-name">Limpieza Facial con Agua Micelar de Rosa</div>
+        <div class="price">$13000</div>
+        <button onclick="agregarAlCarrito('Limpieza Facial con Agua Micelar de Rosa', 13000, 'imagencarrito/aguamicelar.JPEG')">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="imagencarrito/tonicofacial.JPEG" alt="Tonico Facial de Agua de Rosa">
+        <div class="product-name">Tonico Facial de Agua de Rosa</div>
+        <div class="price">$6000</div>
+        <button onclick="agregarAlCarrito('Tonico Facial de Agua de Rosa', 6000,'imagencarrito/tonicofacial.JPEG')">Agregar al carrito</button>
+      </div>
+    
+    <div class="producto">
+      <img src="imagencarrito/balsamo.JPEG" alt="Hidratante Para Labios">
+      <div class="product-name">Hidratante Para Labios</div>
+      <div class="price">$4000</div>
+      <button onclick="agregarAlCarrito('Hidratante Para Labios', 4000,'imagencarrito/balsamo.JPEG')">Agregar al carrito</button>
+    </div>
+    
+    <div class="producto">
+      <img src="imagencarrito/Unguento.JPEG" alt="Alivio Natural para el Resfrio">
+      <div class="product-name">Alivio Natural para el Resfrio</div>
+      <div class="price">$8000</div>
+      <button onclick="agregarAlCarrito('Alivio Natural para el Resfrio', 8000,'imagencarrito/Unguento.JPEG')">Agregar al carrito</button>
+    </div>
+    
+    <div class="producto">
+      <img src="imagencarrito/Pomadadolor.JPEG" alt="Pomada Natural para Aliviar dolores">
+      <div class="product-name">Pomada Natural para Aliviar dolores</div>
+      <div class="price">$8000</div>
+      <button onclick="agregarAlCarrito('Pomada Natural para Aliviar dolores', 8000,'imagencarrito/Pomadadolor.JPEG')">Agregar al carrito</button>
+    </div>
+    
+    <div class="producto">
+      <img src="imagencarrito/Shampoo.JPEG" alt="Shapoo solido capilar">
+      <div class="product-name">Shapoo solido capilar</div>
+      <div class="price">$10000</div>
+      <button onclick="agregarAlCarrito('Shapoo solido capilar', 10000,'imagencarrito/Shampoo.JPEG')">Agregar al carrito</button>
+    </div>
+    
+    <div class="producto">
+      <img src="imagencarrito/Shampoortiga.JPEG" alt="Shampo Para Cabello secos y sin vidas">
+      <div class="product-name">Shampoo Para Cabello secos y sin vidas de Ortiga</div>
+      <div class="price">$10000</div>
+      <button onclick="agregarAlCarrito('Shampoo Para Cabello secos y sin vidas de Ortiga', 10000,'imagencarrito/Shampoortiga.JPEG')">Agregar al carrito</button>
+    </div>
+    
+    <div class="producto">
+      <img src="imagencarrito/acondicionador.JPEG" alt="Acondicionador solido Nutritivo">
+      <div class="product-name">Acondicionador solido Nutritivo</div>
+      <div class="price">$10000</div>
+      <button onclick="agregarAlCarrito('Acondicionador solido Nutritivo',10000,'imagencarrito/acondicionador.JPEG')">Agregar al carrito</button>
+    </div>
+    
+    <div class="producto">
+      <img src="imagencarrito/combo.JPEG" alt="Combo cabello">
+      <div class="product-name">Combo cabello</div>
+      <div class="price">$25000</div>
+      <button onclick="agregarAlCarrito('Combo cabello',25000,'imagencarrito/combo.JPEG')">Agregar al carrito</button>
+    </div>
+    
+    <div class="producto">
+      <img src="imagencarrito/pomadahongos.JPEG" alt="Tratamiento Natural Antifungico">
+      <div class="product-name">Pomada Natural Antifungica</div>
+      <div class="price">$6000</div>
+      <button onclick="agregarAlCarrito('Pomada Natural Antifungica',6000,'imagencarrito/pomadahongos.JPEG')">Agregar al carrito</button>
+    </div>
+    
+    <div class="producto">
+      <img src="imagencarrito/arcillacaolin.JPEG" alt="Arcilla Blanca Para Mascarilla">
+      <div class="product-name">Arcilla Blanca Caolin</div>
+      <div class="price">$6000</div>
+      <button onclick="agregarAlCarrito('Arcilla Blanca Caolin',6000,'imagencarrito/arcillacaolin.JPEG')">Agregar al carrito</button>
+    </div>
+    
+    <div class="producto">
+      <img src="imagencarrito/arcillaroja.JPEG" alt="Arcilla roja revitalizante">
+      <div class="product-name">Arcilla roja revitalizante</div>
+      <div class="price">$6000</div>
+      <button onclick="agregarAlCarrito('Arcilla roja revitalizante',6000,'imagencarrito/arcillaroja.JPEG')">Agregar al carrito</button>
+    </div>
+    
+    <div class="producto">
+      <img src="imagencarrito/arcillabentonita.JPEG" alt="Arcilla Bentonita">
+      <div class="product-name">Arcilla Bentonita</div>
+      <div class="price">$6000</div>
+      <button onclick="agregarAlCarrito('Arcilla Bentonita',6000,'imagencarrito/arcillabentonita.JPEG')">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="imagencarrito/tinturacoca.JPEG" alt="tintuta madre de coca">
+      <div class="product-name">Tintura madre de Hoja de Coca</div>
+      <div class="price">$6000</div>
+      <button onclick="agregarAlCarrito('Tintura madre de Hoja de Coca',6000,'imagencarrito/tinturacoca.JPEG')">Agregar al carrito</button>
+    </div>
+    
+    <div class="producto">
+      <img src="imagencarrito/jabonhibisco.JPEG" alt="Cura y Regenera la Piel">
+      <div class="product-name">Jabon de hibisco</div>
+      <div class="price">$6000</div>
+      <button onclick="agregarAlCarrito('Jabon de hibisco',6000,'imagencarrito/jabonhibisco.JPEG')">Agregar al carrito</button>
+    </div>
+    
+    <div class="producto">
+      <img src="imagencarrito/jabonavena.JPEG" alt="Jabon Suave y calmante">
+      <div class="product-name">Jabon de Avena</div>
+      <div class="price">$5000</div>
+      <button onclick="agregarAlCarrito('Jabon de Avena', 5000,'imagencarrito/jabonavena.JPEG')">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="imagencarrito/jabonlavanda.JPEG" alt="Jabon Suave y calmante">
+      <div class="product-name">Jabon de Lavanda</div>
+      <div class="price">$5000</div>
+      <button onclick="agregarAlCarrito('Jabon de Lavanda', 5000,'imagencarrito/jabonlavanda.JPEG')">Agregar al carrito</button>
+    </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ZAID Cosmética Natural. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="JS/script.js"></script>
+</body>
+</html>
